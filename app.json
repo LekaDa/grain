@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "effycient-assignment",
+    "name": "grain.",
     "slug": "effycient-assignment",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "effycientassignment",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "ios": {
       "icon": "./assets/expo.icon"
     },
@@ -26,9 +26,15 @@
     "plugins": [
       "expo-router",
       [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Food Log to use the camera to scan food barcodes."
+        }
+      ],
+      [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#FAF8F3",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
